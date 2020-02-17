@@ -1,1 +1,1 @@
-import {default as PerformanceCalculation} from './components/libs/PerformanceCalculation'
+export {default as PerformanceCalculation} from './components/libs/PerformanceCalculation'
