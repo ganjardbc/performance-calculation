@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react'
 import PerformanceCalculation from './components/libs/PerformanceCalculation'
 
-function App() {
-  return (
-    <div className="main-content">
-      <PerformanceCalculation />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <PerformanceCalculation />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
