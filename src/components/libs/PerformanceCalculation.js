@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import '../assets/sass/app.css'
+import React, { Component } from 'react';
+import '../assets/sass/app.css';
 
 let payload = {
     "result": {
@@ -14,24 +14,24 @@ let payload = {
     },
     "paMidYear": "0",
     "gradePerformance": "K",
-}
+};
 
 class Cards extends Component {
 
     constructor () {
-      super()
+      super();
       this.state = {
           midPayload: payload,
           finalPayload: payload
-      }
+      };
     }
 
     componentDidMount() {
-        console.log(this.state.midPayload)
+        console.log(this.state.midPayload);
     }
 
     renderContentMid () {
-        let {midPayload} = this.state
+        let {midPayload} = this.state;
         return (
             <div>
                 <div className="display-flex-normal border-bottom">
@@ -183,11 +183,11 @@ class Cards extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 
     renderContentFinal () {
-        let {finalPayload} = this.state
+        let {finalPayload} = this.state;
         return (
             <div>
                 <div className="display-flex-normal border-bottom">
@@ -339,38 +339,34 @@ class Cards extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 
     render () {
         return (
-            <div>
-                <div className="card">
-                    <div className="display-flex-normal">
-                        <div className="width width-full">
-                            <div className="padding-15px border-bottom">
-                                <div className="txt-site txt-16 txt-bold txt-main txt-center">
-                                    PERFORMANCE APPRAISAL MID YEAR
-                                </div>
+            <div className="card">
+                <div className="display-flex-normal">
+                    <div className="width width-full">
+                        <div className="padding-15px border-bottom">
+                            <div className="txt-site txt-16 txt-bold txt-main txt-center">
+                                PERFORMANCE APPRAISAL MID YEAR
                             </div>
-                            { this.renderContentMid() }
                         </div>
-
-                        <div className="width width-full border-left">
-                            <div className="padding-15px border-bottom">
-                                <div className="txt-site txt-16 txt-bold txt-main txt-center">
-                                    PERFORMANCE APPRAISAL FINAL YEAR
-                                </div>
-                            </div>
-                            { this.renderContentFinal() }
-                        </div>
+                        { this.renderContentMid() }
                     </div>
-
+                    <div className="width width-full border-left">
+                        <div className="padding-15px border-bottom">
+                            <div className="txt-site txt-16 txt-bold txt-main txt-center">
+                                PERFORMANCE APPRAISAL FINAL YEAR
+                            </div>
+                        </div>
+                        { this.renderContentFinal() }
+                    </div>
                 </div>
             </div>
-        )
+        );
     }
 
 }
 
-export default Cards
+export default Cards;

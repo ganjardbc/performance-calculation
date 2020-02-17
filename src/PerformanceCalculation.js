@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import PerformanceCalculation from './components/libs/PerformanceCalculation'
+import React, { Component } from 'react';
+import PerformanceCalculation from './components/libs/PerformanceCalculation';
 
 class App extends Component {
   render() {
@@ -7,7 +7,7 @@ class App extends Component {
       <div>
         <PerformanceCalculation />
       </div>
-    )
+    );
   }
 }
 

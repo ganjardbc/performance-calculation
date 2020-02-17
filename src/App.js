@@ -1,5 +1,5 @@
 import React from 'react';
-import PerformanceCalculation from './components/libs/PerformanceCalculation'
+import PerformanceCalculation from './PerformanceCalculation';
 
 function App() {
   return (
